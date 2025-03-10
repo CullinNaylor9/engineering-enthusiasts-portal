@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { ArrowDown, Bot, CircuitBoard, Code } from 'lucide-react';
