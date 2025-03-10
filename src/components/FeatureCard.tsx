@@ -9,6 +9,7 @@ interface FeatureCardProps {
   imageSrc: string;
   icon: LucideIcon;
   className?: string;
+  reversed?: boolean;
   id?: string;
 }
 
@@ -18,6 +19,7 @@ const FeatureCard = ({
   imageSrc,
   icon: Icon,
   className,
+  reversed = false,
   id,
 }: FeatureCardProps) => {
   return (
@@ -29,8 +31,16 @@ const FeatureCard = ({
       )}
     >
       <div className="container px-4 md:px-6">
-        <div className="grid gap-10 items-center lg:grid-cols-[1.2fr_1fr] xl:grid-cols-[1.3fr_1fr]">
-          <div className="flex flex-col space-y-6">
+        <div className={cn(
+          'grid gap-10 items-center',
+          reversed 
+            ? 'lg:grid-cols-[1fr_1.2fr] xl:grid-cols-[1fr_1.3fr]' 
+            : 'lg:grid-cols-[1.2fr_1fr] xl:grid-cols-[1.3fr_1fr]'
+        )}>
+          <div className={cn(
+            'flex flex-col space-y-6',
+            reversed && 'lg:order-last'
+          )}>
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-engineer-100">
               <Icon className="h-6 w-6 text-engineer-700" />
             </div>
@@ -43,7 +53,10 @@ const FeatureCard = ({
               </p>
             </div>
           </div>
-          <div className="relative">
+          <div className={cn(
+            'relative',
+            reversed ? 'lg:order-first' : ''
+          )}>
             <div className="mx-auto max-w-[500px] lg:max-w-none">
               <AnimatedImage
                 src={imageSrc}

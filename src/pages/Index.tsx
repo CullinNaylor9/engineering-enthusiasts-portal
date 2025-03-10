@@ -37,6 +37,7 @@ const Index = () => {
             description="Learn to solve problems like an engineer. Our project-based curriculum teaches the engineering design process, from identifying challenges to creating, testing, and refining solutions while building technical skills."
             imageSrc="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
             icon={Code}
+            reversed
           />
           
           <FeatureCard
@@ -45,6 +46,7 @@ const Index = () => {
             description="Experience mathematics as a powerful tool for understanding our world. Beyond calculations, students develop mathematical reasoning, problem-solving strategies, and the ability to apply math concepts to real-world situations."
             imageSrc="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
             icon={Calculator}
+            reversed
           />
         </div>
         
