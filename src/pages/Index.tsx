@@ -35,7 +35,7 @@ const Index = () => {
             id="engineering"
             title="Engineering & Design Thinking"
             description="Learn to solve problems like an engineer. Our project-based curriculum teaches the engineering design process, from identifying challenges to creating, testing, and refining solutions while building technical skills."
-            imageSrc="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+            imageSrc="https://i.postimg.cc/Sxy39Kp1/IMG-1804.jpg"
             icon={Code}
           />
           
