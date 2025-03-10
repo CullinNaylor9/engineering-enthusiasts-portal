@@ -13,8 +13,8 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Hydroponic Plant System",
-    description: "Design and build a sustainable hydroponic growing system using principles of biology and chemistry.",
+    title: "Indoor Vertical Garden",
+    description: "Learn about plant biology and sustainable agriculture by designing and building an efficient indoor growing system.",
     imageSrc: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     difficulty: "Intermediate",
     category: "Science"
