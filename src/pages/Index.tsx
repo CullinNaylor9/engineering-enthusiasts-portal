@@ -1,3 +1,4 @@
+
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import FeatureCard from '@/components/FeatureCard';
@@ -24,7 +25,7 @@ const Index = () => {
         <div className="bg-white">
           <FeatureCard
             id="technology"
-            title="Technology & Digital Literacy"
+            title="Technology"
             description="Develop technical fluency in our rapidly evolving digital world. Students learn about computer systems, networks, cybersecurity, and digital citizenship while mastering essential tech skills through interactive projects."
             imageSrc="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
             icon={CircuitBoard}
