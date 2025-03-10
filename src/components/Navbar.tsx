@@ -68,9 +68,13 @@ const Navbar = () => {
           >
             <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center">
               <img 
-                src="https://learning.bishopsprep.org.za/prospective2022/wp-content/uploads/sites/53/2021/05/favicon.png" 
+                src="/logo.png" 
                 alt="YoungEngineers Logo" 
                 className="w-full h-full object-contain"
+                onError={(e) => {
+                  console.error('Image failed to load');
+                  e.currentTarget.src = "https://learning.bishopsprep.org.za/prospective2022/wp-content/uploads/sites/53/2021/05/favicon.png";
+                }}
               />
             </div>
             <span className="font-semibold text-lg tracking-tight">YoungEngineers</span>

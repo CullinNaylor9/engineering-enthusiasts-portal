@@ -8,6 +8,7 @@ interface AnimatedImageProps {
   className?: string;
   aspectRatio?: 'auto' | 'square' | 'video' | 'portrait';
   priority?: boolean;
+  fallbackSrc?: string;
 }
 
 const AspectRatioClasses = {
@@ -22,10 +23,12 @@ const AnimatedImage = ({
   alt,
   className,
   aspectRatio = 'auto',
-  priority = false
+  priority = false,
+  fallbackSrc
 }: AnimatedImageProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isInView, setIsInView] = useState(priority);
+  const [imgSrc, setImgSrc] = useState(src);
 
   useEffect(() => {
     if (priority) return;
@@ -50,6 +53,13 @@ const AnimatedImage = ({
     setIsLoaded(true);
   };
 
+  const handleError = () => {
+    console.error('Image failed to load:', src);
+    if (fallbackSrc) {
+      setImgSrc(fallbackSrc);
+    }
+  };
+
   const aspectClass = AspectRatioClasses[aspectRatio];
 
   return (
@@ -63,13 +73,14 @@ const AnimatedImage = ({
     >
       {(isInView || priority) && (
         <img
-          src={src}
+          src={imgSrc}
           alt={alt}
           className={cn(
-            'h-full w-full object-cover transition-all duration-700',
+            'h-full w-full object-contain transition-all duration-700',
             isLoaded ? 'opacity-100 blur-0 scale-100' : 'opacity-0 blur-md scale-[1.05]'
           )}
           onLoad={handleLoad}
+          onError={handleError}
         />
       )}
     </div>
