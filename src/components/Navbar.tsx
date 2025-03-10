@@ -1,14 +1,14 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { Atom, Code, CircuitBoard, Menu, X, ExternalLink, Calendar, Users, BookOpen, Microscope, Calculator } from 'lucide-react';
+import { Code, CircuitBoard, Menu, X, ExternalLink, Calendar, Users, BookOpen, Microscope, Calculator } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import AnimatedImage from './AnimatedImage';
 
 const navLinks = [
   { name: 'Science', icon: Microscope, href: '#science' },
   { name: 'Technology', icon: CircuitBoard, href: '#technology' },
-  { name: 'Engineering', icon: Atom, href: '#engineering' },
+  { name: 'Engineering', icon: Code, href: '#engineering' },
   { name: 'Math', icon: Calculator, href: '#math' },
   { name: 'Curriculum', icon: BookOpen, href: '#curriculum' },
   { name: 'Team', icon: Users, href: '#team' },
@@ -19,8 +19,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
-  const [imageError, setImageError] = useState(false);
-
+  
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -74,13 +73,7 @@ const Navbar = () => {
                 src="https://learning.bishopsprep.org.za/prospective2022/wp-content/uploads/sites/53/2021/05/favicon.png" 
                 alt="STEM Bishops Logo" 
                 className="h-full w-full object-contain"
-                onError={() => setImageError(true)}
               />
-              {imageError && (
-                <div className="absolute inset-0 flex items-center justify-center bg-engineer-100 rounded-full">
-                  <Atom className="h-5 w-5 text-primary" />
-                </div>
-              )}
             </div>
             <span className="font-semibold text-lg tracking-tight whitespace-nowrap">STEM Bishops</span>
           </Link>
@@ -160,4 +153,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
