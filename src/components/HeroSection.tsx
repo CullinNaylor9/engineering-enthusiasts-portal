@@ -79,7 +79,7 @@ const HeroSection = () => {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             )}
           >
-            Building Future <span className="block text-engineer-600">STEM Leaders</span>
+            STEM Bishops <span className="block text-engineer-600">Excellence</span>
           </h1>
           
           <p 

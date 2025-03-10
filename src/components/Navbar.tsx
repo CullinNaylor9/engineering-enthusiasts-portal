@@ -69,10 +69,10 @@ const Navbar = () => {
             to="/" 
             className="flex items-center space-x-2 hover:opacity-90 transition-opacity"
           >
-            <div className="h-8 w-8 md:h-10 md:w-10 relative overflow-hidden">
+            <div className="flex-shrink-0 h-8 w-8 md:h-10 md:w-10 relative overflow-hidden">
               <img 
                 src="/logo.png" 
-                alt="STEM Academy Logo" 
+                alt="STEM Bishops Logo" 
                 className="h-full w-full object-contain"
                 onError={() => setImageError(true)}
               />
@@ -82,7 +82,7 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <span className="font-semibold text-lg tracking-tight">STEM Academy</span>
+            <span className="font-semibold text-lg tracking-tight whitespace-nowrap">STEM Bishops</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-6">
