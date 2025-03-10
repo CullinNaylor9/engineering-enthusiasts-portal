@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { ArrowDown, Bot, CircuitBoard, Code } from 'lucide-react';
@@ -37,7 +38,7 @@ const HeroSection = () => {
         <iframe 
           className="absolute w-full h-full scale-[1.5] object-cover"
           src="https://www.youtube.com/embed/c_r3dG53vjQ?si=_0qa6yybblvybzQB&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=c_r3dG53vjQ&amp;start=2" 
-          title="Background Video" 
+          title="YouTube video player" 
           frameBorder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           referrerPolicy="strict-origin-when-cross-origin" 
