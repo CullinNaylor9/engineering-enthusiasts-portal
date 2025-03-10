@@ -71,7 +71,7 @@ const Navbar = () => {
           >
             <div className="flex-shrink-0 h-8 w-8 md:h-10 md:w-10 relative overflow-hidden">
               <img 
-                src="/logo.png" 
+                src="https://learning.bishopsprep.org.za/prospective2022/wp-content/uploads/sites/53/2021/05/favicon.png" 
                 alt="STEM Bishops Logo" 
                 className="h-full w-full object-contain"
                 onError={() => setImageError(true)}
@@ -160,3 +160,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
