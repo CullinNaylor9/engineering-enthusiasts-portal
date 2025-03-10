@@ -43,7 +43,7 @@ const Index = () => {
             id="math"
             title="Mathematics in Action"
             description="Experience mathematics as a powerful tool for understanding our world. Beyond calculations, students develop mathematical reasoning, problem-solving strategies, and the ability to apply math concepts to real-world situations."
-            imageSrc="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+            imageSrc="https://i.postimg.cc/rsGJQSk6/TG.jpg"
             icon={Calculator}
           />
         </div>
