@@ -64,7 +64,11 @@ const Navbar = () => {
             to="/" 
             className="flex items-center space-x-2 hover:opacity-90 transition-opacity"
           >
-            <Bot className="h-6 w-6 text-engineer-700" />
+            <img 
+              src="https://learning.bishopsprep.org.za/prospective2022/wp-content/uploads/sites/53/2021/05/favicon.png" 
+              alt="YoungEngineers Logo" 
+              className="h-8 w-8"
+            />
             <span className="font-semibold text-lg tracking-tight">YoungEngineers</span>
           </Link>
 
