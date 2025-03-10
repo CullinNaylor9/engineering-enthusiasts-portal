@@ -30,7 +30,7 @@ const teamMembers: TeamMember[] = [
     name: "Cullin Naylor",
     role: "Co-Founder & Curriculum Director",
     image: "https://i.postimg.cc/4xGCf5dc/Cullin.jpg",
-    bio: "Education specialist focused on developing innovative STEM curriculum that engages students through hands-on, project-based learning.",
+    bio: "Passionate student committed to empowering peers through hands-on, project-based learning experiences in STEM education.",
     social: {
       email: "cullin@youngengineers.com",
       linkedin: "https://linkedin.com/",
