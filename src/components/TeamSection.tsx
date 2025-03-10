@@ -16,47 +16,27 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Dr. Sarah Johnson",
-    role: "Robotics Lead",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80",
-    bio: "Ph.D. in Robotics Engineering with 10+ years of experience teaching young minds about automation and robotics.",
-    social: {
-      email: "sarah@youngengineers.com",
-      linkedin: "https://linkedin.com/",
-      github: "https://github.com/"
-    }
-  },
-  {
-    name: "Mark Williams",
-    role: "Coding Instructor",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80",
-    bio: "Former software developer at Google with a passion for teaching children the fundamentals of programming in a fun, engaging way.",
+    name: "Mark Erlangsen",
+    role: "Co-Founder & Lead Instructor",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80",
+    bio: "Experienced instructor with a passion for engineering education and making complex concepts accessible to students of all ages.",
     social: {
       email: "mark@youngengineers.com",
-      linkedin: "https://linkedin.com/"
-    }
-  },
-  {
-    name: "Elena Rodriguez",
-    role: "Electronics Specialist",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80",
-    bio: "Electronics engineer specializing in circuit design and embedded systems. Elena makes complex electronics concepts accessible to students of all ages.",
-    social: {
-      email: "elena@youngengineers.com",
-      github: "https://github.com/"
-    }
-  },
-  {
-    name: "David Chen",
-    role: "Program Director",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80",
-    bio: "With a background in education and engineering, David oversees curriculum development and ensures all programs meet the highest standards.",
-    social: {
-      email: "david@youngengineers.com",
       linkedin: "https://linkedin.com/",
       github: "https://github.com/"
     }
   },
+  {
+    name: "Cullin Naylor",
+    role: "Co-Founder & Curriculum Director",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80",
+    bio: "Education specialist focused on developing innovative STEM curriculum that engages students through hands-on, project-based learning.",
+    social: {
+      email: "cullin@youngengineers.com",
+      linkedin: "https://linkedin.com/",
+      github: "https://github.com/"
+    }
+  }
 ];
 
 const TeamSection = () => {
@@ -75,7 +55,7 @@ const TeamSection = () => {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 mx-auto max-w-3xl">
           {teamMembers.map((member, index) => (
             <div 
               key={index}
