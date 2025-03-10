@@ -1,6 +1,6 @@
 
 import { cn } from '@/lib/utils';
-import { Robot, Mail, Instagram, Twitter, Youtube } from 'lucide-react';
+import { Bot, Mail, Instagram, Twitter, Youtube } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Robot className="h-6 w-6 text-engineer-700" />
+              <Bot className="h-6 w-6 text-engineer-700" />
               <span className="text-xl font-semibold">YoungEngineers</span>
             </div>
             <p className="text-engineer-600 max-w-xs">

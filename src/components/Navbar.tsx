@@ -1,11 +1,11 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { CircuitBoard, Code, Robot, Menu, X } from 'lucide-react';
+import { CircuitBoard, Code, Bot, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const navLinks = [
-  { name: 'Robotics', icon: Robot, href: '#robotics' },
+  { name: 'Robotics', icon: Bot, href: '#robotics' },
   { name: 'Coding', icon: Code, href: '#coding' },
   { name: 'Electronics', icon: CircuitBoard, href: '#electronics' },
 ];
