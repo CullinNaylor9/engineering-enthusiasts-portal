@@ -8,66 +8,116 @@ interface CourseModule {
   duration: string;
   level: 'Beginner' | 'Intermediate' | 'Advanced';
   topics: string[];
+  category: 'Science' | 'Technology' | 'Engineering' | 'Mathematics';
 }
 
 const modules: CourseModule[] = [
   {
-    title: "Introduction to Robotics",
-    description: "Learn the basics of robotics, from simple mechanisms to building your first robot.",
+    title: "Exploring the Natural World",
+    description: "Discover the wonders of biology, chemistry, and physics through hands-on experiments.",
     duration: "8 weeks",
     level: "Beginner",
+    category: "Science",
     topics: [
-      "Basic robotics concepts",
-      "Simple machine elements",
-      "Sensors and actuators",
-      "Building a basic robot",
-      "Programming fundamentals for robots",
-      "Robot challenges and competitions"
+      "Scientific method and inquiry",
+      "Chemistry experiments",
+      "Physics of motion and energy",
+      "Biology and ecosystems",
+      "Environmental science",
+      "Data collection and analysis"
     ]
   },
   {
-    title: "Coding Fundamentals",
-    description: "Discover the building blocks of programming through engaging, hands-on projects.",
+    title: "Digital Literacy Fundamentals",
+    description: "Build essential digital skills and understand how technology shapes our world.",
     duration: "10 weeks",
     level: "Beginner",
+    category: "Technology",
     topics: [
-      "Introduction to algorithms",
-      "Scratch programming",
-      "JavaScript basics",
-      "Problem-solving with code",
-      "Creating simple games",
-      "Web development basics"
+      "Computer systems and hardware",
+      "Introduction to programming",
+      "Digital media creation",
+      "Internet and networks",
+      "Digital citizenship and safety",
+      "Emerging technologies"
     ]
   },
   {
-    title: "Electronics Workshop",
-    description: "Explore the world of electronics, circuits, and components through practical projects.",
+    title: "Engineering Design Process",
+    description: "Learn to think like an engineer and solve problems through design thinking.",
     duration: "6 weeks",
     level: "Intermediate",
+    category: "Engineering",
     topics: [
-      "Basic circuit theory",
-      "Electronic components",
-      "Circuit design and analysis",
-      "Building electronic projects",
-      "Microcontrollers introduction",
-      "Troubleshooting skills"
+      "Engineering design cycle",
+      "Prototyping methods",
+      "Material properties and selection",
+      "CAD fundamentals",
+      "Testing and iteration",
+      "Sustainable design principles"
     ]
   },
   {
-    title: "Advanced Robotics Projects",
-    description: "Take your robotics skills to the next level with complex, real-world applications.",
+    title: "Mathematical Problem Solving",
+    description: "Develop mathematical reasoning and apply it to solve real-world challenges.",
     duration: "12 weeks",
+    level: "Intermediate",
+    category: "Mathematics",
+    topics: [
+      "Logical reasoning and proof",
+      "Mathematical modeling",
+      "Data analysis and statistics",
+      "Spatial reasoning and geometry",
+      "Patterns and algebra",
+      "Applied mathematics"
+    ]
+  },
+  {
+    title: "Advanced Robotics",
+    description: "Design and program sophisticated robots for complex tasks and competitions.",
+    duration: "14 weeks",
     level: "Advanced",
+    category: "Engineering",
     topics: [
       "Autonomous navigation",
-      "Computer vision for robots",
-      "Artificial intelligence basics",
-      "Advanced sensor integration",
-      "Multi-robot systems",
-      "Competition-ready robots"
+      "Sensor integration",
+      "Control systems",
+      "AI and machine learning basics",
+      "Mechanical design principles",
+      "Competition strategies"
+    ]
+  },
+  {
+    title: "Computational Thinking",
+    description: "Master the art of solving problems using computer science principles.",
+    duration: "12 weeks",
+    level: "Advanced",
+    category: "Technology",
+    topics: [
+      "Algorithm development",
+      "Data structures",
+      "Programming paradigms",
+      "Code efficiency and optimization",
+      "Software engineering principles",
+      "Applied computer science"
     ]
   },
 ];
+
+const getCategoryColor = (category: CourseModule['category']) => {
+  switch (category) {
+    case 'Science':
+      return 'bg-amber-100 text-amber-800';
+    case 'Technology':
+      return 'bg-blue-100 text-blue-800';
+    case 'Engineering':
+      return 'bg-purple-100 text-purple-800';
+    case 'Mathematics':
+      return 'bg-green-100 text-green-800';
+    default:
+      return 'bg-gray-100 text-gray-800';
+  }
+};
 
 const CurriculumSection = () => {
   return (
@@ -78,14 +128,14 @@ const CurriculumSection = () => {
             <BookOpen className="h-6 w-6 text-engineer-700" />
           </div>
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
-            Our Curriculum
+            Our STEM Curriculum
           </h2>
           <p className="text-lg text-engineer-700">
-            Hands-on learning experiences designed to inspire young engineers and develop essential skills
+            Comprehensive learning experiences designed to develop critical thinking and problem-solving across science, technology, engineering, and mathematics
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {modules.map((module, index) => (
             <div 
               key={index} 
@@ -103,6 +153,14 @@ const CurriculumSection = () => {
                     "bg-purple-100 text-purple-800"
                   )}>
                     {module.level}
+                  </span>
+                </div>
+                <div className="mb-3">
+                  <span className={cn(
+                    "inline-block text-xs font-medium py-1 px-2 rounded",
+                    getCategoryColor(module.category)
+                  )}>
+                    {module.category}
                   </span>
                 </div>
                 <p className="text-engineer-700 mb-5">

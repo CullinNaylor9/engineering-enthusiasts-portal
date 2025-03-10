@@ -8,30 +8,51 @@ interface Project {
   description: string;
   imageSrc: string;
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced';
-  category: 'Robotics' | 'Coding' | 'Electronics';
+  category: 'Science' | 'Technology' | 'Engineering' | 'Mathematics';
 }
 
 const projects: Project[] = [
   {
-    title: "Line-Following Robot",
-    description: "Build a robot that can follow a line path using sensors and basic programming.",
-    imageSrc: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    difficulty: "Beginner",
-    category: "Robotics"
+    title: "Hydroponic Plant System",
+    description: "Design and build a sustainable hydroponic growing system using principles of biology and chemistry.",
+    imageSrc: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    difficulty: "Intermediate",
+    category: "Science"
   },
   {
-    title: "Weather Station",
-    description: "Create a digital weather station that collects and displays environmental data.",
+    title: "Mobile Weather Station",
+    description: "Create a digital weather station that collects, analyzes, and displays environmental data.",
     imageSrc: "https://images.unsplash.com/photo-1567701193142-5a75211a2eda?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     difficulty: "Intermediate",
-    category: "Electronics"
+    category: "Technology"
   },
   {
-    title: "Mobile Game Development",
-    description: "Design and code your own mobile game using modern game development tools.",
-    imageSrc: "https://images.unsplash.com/photo-1624466664783-286c522a9151?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    title: "Autonomous Robot",
+    description: "Build a robot that navigates its environment using sensors and programming logic.",
+    imageSrc: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     difficulty: "Advanced",
-    category: "Coding"
+    category: "Engineering"
+  },
+  {
+    title: "Data Visualization App",
+    description: "Develop an interactive application that transforms complex data sets into meaningful visual representations.",
+    imageSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    difficulty: "Advanced",
+    category: "Mathematics"
+  },
+  {
+    title: "Biodiversity Survey",
+    description: "Conduct a local biodiversity study using scientific sampling techniques and analysis.",
+    imageSrc: "https://images.unsplash.com/photo-1560324600-13d63b78c963?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    difficulty: "Beginner",
+    category: "Science"
+  },
+  {
+    title: "3D Geometric Modeling",
+    description: "Apply mathematical principles to create and analyze 3D models of geometric structures.",
+    imageSrc: "https://images.unsplash.com/photo-1545987796-200677ee1011?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    difficulty: "Intermediate",
+    category: "Mathematics"
   },
 ];
 
@@ -47,7 +68,7 @@ const ProjectShowcase = () => {
             Student Projects
           </h2>
           <p className="text-lg text-engineer-700">
-            Explore some of the exciting projects our students have built
+            Explore some of the exciting STEM projects our students have created
           </p>
         </div>
         
@@ -76,7 +97,13 @@ const ProjectShowcase = () => {
               </div>
               <div className="p-6">
                 <div className="mb-2">
-                  <span className="chip text-xs">
+                  <span className={cn(
+                    "chip text-xs",
+                    project.category === "Science" ? "bg-amber-100 text-amber-800" :
+                    project.category === "Technology" ? "bg-blue-100 text-blue-800" :
+                    project.category === "Engineering" ? "bg-purple-100 text-purple-800" :
+                    "bg-green-100 text-green-800"
+                  )}>
                     {project.category}
                   </span>
                 </div>

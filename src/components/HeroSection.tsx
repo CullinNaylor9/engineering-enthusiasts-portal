@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { ArrowDown, Bot, CircuitBoard, Code } from 'lucide-react';
+import { ArrowDown, Atom, Code, Microscope, Calculator } from 'lucide-react';
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +15,7 @@ const HeroSection = () => {
   }, []);
   
   const scrollToContent = () => {
-    const firstSection = document.getElementById('robotics');
+    const firstSection = document.getElementById('science');
     if (firstSection) {
       window.scrollTo({
         top: firstSection.offsetTop - 100,
@@ -25,9 +25,10 @@ const HeroSection = () => {
   };
 
   const heroFeatures = [
-    { icon: Bot, text: "Hands-on Robotics" },
-    { icon: Code, text: "Creative Coding" },
-    { icon: CircuitBoard, text: "Circuit Design" },
+    { icon: Microscope, text: "Exciting Science" },
+    { icon: Code, text: "Modern Technology" },
+    { icon: Atom, text: "Creative Engineering" },
+    { icon: Calculator, text: "Engaging Math" },
   ];
 
   return (
@@ -69,7 +70,7 @@ const HeroSection = () => {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             )}
           >
-            <span>Inspiring Young Innovators</span>
+            <span>Inspiring Young Minds</span>
           </div>
           
           <h1 
@@ -78,7 +79,7 @@ const HeroSection = () => {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             )}
           >
-            Building Tomorrow's Engineers <span className="block text-engineer-600">Today</span>
+            Building Future <span className="block text-engineer-600">STEM Leaders</span>
           </h1>
           
           <p 
@@ -87,12 +88,12 @@ const HeroSection = () => {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             )}
           >
-            Discover the exciting world of robotics, coding, and electronics through hands-on learning and creative projects.
+            Discover the exciting world of Science, Technology, Engineering, and Mathematics through hands-on learning and creative projects.
           </p>
           
           <div 
             className={cn(
-              "mt-8 flex justify-center space-x-4 transition-all duration-700 delay-300",
+              "mt-8 flex flex-wrap justify-center gap-4 transition-all duration-700 delay-300",
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             )}
           >

@@ -1,12 +1,15 @@
+
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { CircuitBoard, Code, Bot, Menu, X, ExternalLink, Calendar, Users, BookOpen } from 'lucide-react';
+import { Atom, Code, CircuitBoard, Menu, X, ExternalLink, Calendar, Users, BookOpen, Microscope, Calculator } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import AnimatedImage from './AnimatedImage';
 
 const navLinks = [
-  { name: 'Robotics', icon: Bot, href: '#robotics' },
-  { name: 'Coding', icon: Code, href: '#coding' },
-  { name: 'Electronics', icon: CircuitBoard, href: '#electronics' },
+  { name: 'Science', icon: Microscope, href: '#science' },
+  { name: 'Technology', icon: CircuitBoard, href: '#technology' },
+  { name: 'Engineering', icon: Atom, href: '#engineering' },
+  { name: 'Math', icon: Calculator, href: '#math' },
   { name: 'Curriculum', icon: BookOpen, href: '#curriculum' },
   { name: 'Team', icon: Users, href: '#team' },
   { name: 'Events', icon: Calendar, href: '#events' },
@@ -16,6 +19,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const [imageError, setImageError] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +28,7 @@ const Navbar = () => {
         setScrolled(isScrolled);
       }
       
-      const sections = ['robotics', 'coding', 'electronics', 'curriculum', 'team', 'events'];
+      const sections = ['science', 'technology', 'engineering', 'math', 'curriculum', 'team', 'events'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -65,12 +69,20 @@ const Navbar = () => {
             to="/" 
             className="flex items-center space-x-2 hover:opacity-90 transition-opacity"
           >
-            <img 
-              src="https://learning.bishopsprep.org.za/prospective2022/wp-content/uploads/sites/53/2021/05/favicon.png" 
-              alt="YoungEngineers Logo" 
-              className="h-8 w-8"
-            />
-            <span className="font-semibold text-lg tracking-tight">YoungEngineers</span>
+            <div className="h-8 w-8 md:h-10 md:w-10 relative overflow-hidden">
+              <img 
+                src="/logo.png" 
+                alt="STEM Academy Logo" 
+                className="h-full w-full object-contain"
+                onError={() => setImageError(true)}
+              />
+              {imageError && (
+                <div className="absolute inset-0 flex items-center justify-center bg-engineer-100 rounded-full">
+                  <Atom className="h-5 w-5 text-primary" />
+                </div>
+              )}
+            </div>
+            <span className="font-semibold text-lg tracking-tight">STEM Academy</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-6">

@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
+import { ImageIcon } from 'lucide-react';
 
 interface AnimatedImageProps {
   src: string;
@@ -26,6 +27,7 @@ const AnimatedImage = ({
 }: AnimatedImageProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isInView, setIsInView] = useState(priority);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
     if (priority) return;
@@ -50,6 +52,10 @@ const AnimatedImage = ({
     setIsLoaded(true);
   };
 
+  const handleError = () => {
+    setHasError(true);
+  };
+
   const aspectClass = AspectRatioClasses[aspectRatio];
 
   return (
@@ -61,7 +67,7 @@ const AnimatedImage = ({
         className
       )}
     >
-      {(isInView || priority) && (
+      {(isInView || priority) && !hasError && (
         <img
           src={src}
           alt={alt}
@@ -70,7 +76,15 @@ const AnimatedImage = ({
             isLoaded ? 'opacity-100 blur-0 scale-100' : 'opacity-0 blur-md scale-[1.05]'
           )}
           onLoad={handleLoad}
+          onError={handleError}
         />
+      )}
+      
+      {hasError && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-engineer-100 text-engineer-500">
+          <ImageIcon className="h-8 w-8 mb-2" />
+          <span className="text-sm">Image not available</span>
+        </div>
       )}
     </div>
   );
