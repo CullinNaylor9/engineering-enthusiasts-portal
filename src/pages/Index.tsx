@@ -7,7 +7,6 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import ProjectShowcase from '@/components/ProjectShowcase';
 import FaqSection from '@/components/FaqSection';
 import NewsletterSignup from '@/components/NewsletterSignup';
-import VideoSection from '@/components/VideoSection';
 import Footer from '@/components/Footer';
 import { Bot, Code, CircuitBoard } from 'lucide-react';
 
@@ -18,9 +17,6 @@ const Index = () => {
       
       <main className="flex-grow">
         <HeroSection />
-        
-        {/* Video Section - newly added */}
-        <VideoSection />
         
         {/* Feature sections */}
         <div className="bg-white">
