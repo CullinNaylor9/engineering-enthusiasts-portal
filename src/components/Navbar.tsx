@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { CircuitBoard, Code, Bot, Menu, X, ExternalLink, Calendar, Users, BookOpen } from 'lucide-react';
@@ -68,7 +69,7 @@ const Navbar = () => {
             <img 
               src="https://learning.bishopsprep.org.za/prospective2022/wp-content/uploads/sites/53/2021/05/favicon.png" 
               alt="YoungEngineers Logo" 
-              className="h-8 w-8"
+              className="h-8 w-8 md:h-10 md:w-10 object-contain"
             />
             <span className="font-semibold text-lg tracking-tight">YoungEngineers</span>
           </Link>
