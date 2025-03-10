@@ -32,8 +32,26 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-[90vh] flex items-center pt-16 overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden -z-20">
+        <div className="relative w-full h-full">
+          <iframe 
+            src="https://www.youtube.com/embed/sQ22pm-xvrE?si=TTmNL_x7M5ZZVWed&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=sQ22pm-xvrE"
+            title="YouTube video player" 
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300%] h-[300%] min-w-full min-h-full object-cover"
+          />
+        </div>
+      </div>
+      
+      {/* Overlay to darken the video */}
+      <div className="absolute inset-0 bg-black/40 -z-10" />
+      
       {/* Background gradient */}
-      <div className="absolute inset-0 hero-gradient -z-10" />
+      <div className="absolute inset-0 hero-gradient opacity-80 -z-10" />
       
       {/* Abstract pattern */}
       <div 
