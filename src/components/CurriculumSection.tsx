@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import { BookOpen, CheckCircle, Star, Calendar } from 'lucide-react';
 
@@ -12,36 +11,6 @@ interface CourseModule {
 }
 
 const modules: CourseModule[] = [
-  {
-    title: "Exploring the Natural World",
-    description: "Discover the wonders of biology, chemistry, and physics through hands-on experiments.",
-    duration: "8 weeks",
-    level: "Beginner",
-    category: "Science",
-    topics: [
-      "Scientific method and inquiry",
-      "Chemistry experiments",
-      "Physics of motion and energy",
-      "Biology and ecosystems",
-      "Environmental science",
-      "Data collection and analysis"
-    ]
-  },
-  {
-    title: "Digital Literacy Fundamentals",
-    description: "Build essential digital skills and understand how technology shapes our world.",
-    duration: "10 weeks",
-    level: "Beginner",
-    category: "Technology",
-    topics: [
-      "Computer systems and hardware",
-      "Introduction to programming",
-      "Digital media creation",
-      "Internet and networks",
-      "Digital citizenship and safety",
-      "Emerging technologies"
-    ]
-  },
   {
     title: "Engineering Design Process",
     description: "Learn to think like an engineer and solve problems through design thinking.",
@@ -85,21 +54,6 @@ const modules: CourseModule[] = [
       "AI and machine learning basics",
       "Mechanical design principles",
       "Competition strategies"
-    ]
-  },
-  {
-    title: "Computational Thinking",
-    description: "Master the art of solving problems using computer science principles.",
-    duration: "12 weeks",
-    level: "Advanced",
-    category: "Technology",
-    topics: [
-      "Algorithm development",
-      "Data structures",
-      "Programming paradigms",
-      "Code efficiency and optimization",
-      "Software engineering principles",
-      "Applied computer science"
     ]
   },
 ];
