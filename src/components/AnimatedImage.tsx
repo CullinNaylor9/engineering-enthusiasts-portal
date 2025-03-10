@@ -82,8 +82,11 @@ const AnimatedImage = ({
       
       {hasError && (
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-engineer-100 text-engineer-500">
-          <ImageIcon className="h-8 w-8 mb-2" />
-          <span className="text-sm">Image not available</span>
+          <img 
+            src="https://i.postimg.cc/ZKTkCQ4K/IMG-1691.jpg" 
+            alt="Fallback image" 
+            className="h-full w-full object-cover"
+          />
         </div>
       )}
     </div>
