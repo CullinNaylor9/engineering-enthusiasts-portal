@@ -8,6 +8,9 @@ import ProjectShowcase from '@/components/ProjectShowcase';
 import FaqSection from '@/components/FaqSection';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import Footer from '@/components/Footer';
+import TeamSection from '@/components/TeamSection';
+import CurriculumSection from '@/components/CurriculumSection';
+import UpcomingEventsSection from '@/components/UpcomingEventsSection';
 import { Bot, Code, CircuitBoard } from 'lucide-react';
 
 const Index = () => {
@@ -45,6 +48,15 @@ const Index = () => {
             icon={CircuitBoard}
           />
         </div>
+        
+        {/* Curriculum section */}
+        <CurriculumSection />
+        
+        {/* Team section */}
+        <TeamSection />
+        
+        {/* Upcoming events section */}
+        <UpcomingEventsSection />
         
         {/* Project showcase section */}
         <ProjectShowcase />

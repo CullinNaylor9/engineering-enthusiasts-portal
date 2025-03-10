@@ -1,13 +1,15 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { CircuitBoard, Code, Bot, Menu, X, ExternalLink } from 'lucide-react';
+import { CircuitBoard, Code, Bot, Menu, X, ExternalLink, Calendar, Users, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const navLinks = [
   { name: 'Robotics', icon: Bot, href: '#robotics' },
   { name: 'Coding', icon: Code, href: '#coding' },
   { name: 'Electronics', icon: CircuitBoard, href: '#electronics' },
+  { name: 'Curriculum', icon: BookOpen, href: '#curriculum' },
+  { name: 'Team', icon: Users, href: '#team' },
+  { name: 'Events', icon: Calendar, href: '#events' },
 ];
 
 const Navbar = () => {
@@ -22,8 +24,7 @@ const Navbar = () => {
         setScrolled(isScrolled);
       }
       
-      // Check which section is currently in view
-      const sections = ['robotics', 'coding', 'electronics'];
+      const sections = ['robotics', 'coding', 'electronics', 'curriculum', 'team', 'events'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -72,8 +73,7 @@ const Navbar = () => {
             <span className="font-semibold text-lg tracking-tight">YoungEngineers</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             {navLinks.map(({ name, href, icon: Icon }) => (
               <button
                 key={name}
@@ -103,7 +103,6 @@ const Navbar = () => {
             </a>
           </nav>
 
-          {/* Mobile menu button */}
           <button 
             className="md:hidden flex items-center p-2 rounded-md focus-visible-ring"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -114,11 +113,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
       <div 
         className={cn(
           'md:hidden bg-white/95 backdrop-blur-md absolute left-0 right-0 shadow-subtle overflow-hidden transition-all duration-500 ease-apple border-b border-engineer-100',
-          mobileMenuOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
+          mobileMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
         )}
       >
         <div className="px-4 py-5 space-y-4">
