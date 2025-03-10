@@ -1,12 +1,10 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { Code, CircuitBoard, Menu, X, ExternalLink, Calendar, Users, BookOpen, Microscope, Calculator } from 'lucide-react';
+import { Code, CircuitBoard, Menu, X, ExternalLink, Calendar, Users, BookOpen, Calculator } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import AnimatedImage from './AnimatedImage';
 
 const navLinks = [
-  { name: 'Science', icon: Microscope, href: '#science' },
   { name: 'Technology', icon: CircuitBoard, href: '#technology' },
   { name: 'Engineering', icon: Code, href: '#engineering' },
   { name: 'Math', icon: Calculator, href: '#math' },

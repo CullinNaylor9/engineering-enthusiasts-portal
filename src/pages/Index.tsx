@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import FeatureCard from '@/components/FeatureCard';
@@ -11,7 +10,7 @@ import Footer from '@/components/Footer';
 import TeamSection from '@/components/TeamSection';
 import CurriculumSection from '@/components/CurriculumSection';
 import UpcomingEventsSection from '@/components/UpcomingEventsSection';
-import { Microscope, Code, Atom, Calculator } from 'lucide-react';
+import { Code, CircuitBoard, Calculator } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -24,20 +23,11 @@ const Index = () => {
         {/* Feature sections */}
         <div className="bg-white">
           <FeatureCard
-            id="science"
-            title="Science for Curious Minds"
-            description="Explore the natural world through engaging experiments and observations. Our hands-on science curriculum covers biology, chemistry, physics, and environmental science, nurturing scientific inquiry and critical thinking."
-            imageSrc="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-            icon={Microscope}
-          />
-          
-          <FeatureCard
             id="technology"
             title="Technology & Digital Literacy"
             description="Develop technical fluency in our rapidly evolving digital world. Students learn about computer systems, networks, cybersecurity, and digital citizenship while mastering essential tech skills through interactive projects."
             imageSrc="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-            icon={Code}
-            reversed
+            icon={CircuitBoard}
           />
           
           <FeatureCard
@@ -45,7 +35,8 @@ const Index = () => {
             title="Engineering & Design Thinking"
             description="Learn to solve problems like an engineer. Our project-based curriculum teaches the engineering design process, from identifying challenges to creating, testing, and refining solutions while building technical skills."
             imageSrc="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-            icon={Atom}
+            icon={Code}
+            reversed
           />
           
           <FeatureCard
