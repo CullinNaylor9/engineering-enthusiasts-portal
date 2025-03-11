@@ -17,7 +17,7 @@ const projects: Project[] = [
     description: "Learn about plant biology and sustainable agriculture by designing and building an efficient indoor growing system.",
     imageSrc: "https://m.media-amazon.com/images/I/618VhB2JqfL._AC_SL1500_.jpg",
     difficulty: "Intermediate",
-    category: "Science"
+    category: "Technology"
   },
   {
     title: "Plastic Molding Project",
