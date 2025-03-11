@@ -15,7 +15,7 @@ interface Event {
 
 const events: Event[] = [
   {
-    title: "Robotics Summer Camp",
+    title: "Monday Young Engineers",
     date: "July 10-14, 2023",
     time: "9:00 AM - 3:00 PM",
     location: "Main Campus, Building A",
