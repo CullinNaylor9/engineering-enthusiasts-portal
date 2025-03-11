@@ -15,7 +15,7 @@ const projects: Project[] = [
   {
     title: "We Do 2.0",
     description: "Learn about plant biology and sustainable agriculture by designing and building an efficient indoor growing system.",
-    imageSrc: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    imageSrc: "https://m.media-amazon.com/images/I/618VhB2JqfL._AC_SL1500_.jpg",
     difficulty: "Intermediate",
     category: "Science"
   },
