@@ -16,7 +16,7 @@ interface Event {
 const events: Event[] = [
   {
     title: "Young Engineers",
-    date: "July 10-14, 2023",
+    date: "Monday",
     time: "9:00 AM - 3:00 PM",
     location: "Main Campus, Building A",
     description: "A week-long immersive experience where students will design, build, and program their own robots while learning fundamental engineering concepts.",
