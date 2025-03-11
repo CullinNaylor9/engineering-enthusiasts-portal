@@ -17,7 +17,7 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: "Mark Erlangsen",
-    role: "Lead Instructor",
+    role: "Co-Founder & Lead Instructor",
     image: "https://i.postimg.cc/NM3JNs2X/Erlangseenn.jpg",
     bio: "Experienced instructor with a passion for engineering education and making complex concepts accessible to students of all ages.",
     social: {
@@ -28,7 +28,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Cullin Naylor",
-    role: "Instructor",
+    role: "Co-Founder & Curriculum Director",
     image: "https://i.postimg.cc/4xGCf5dc/Cullin.jpg",
     bio: "Passionate student committed to empowering peers through hands-on, project-based learning experiences in STEM education.",
     social: {
