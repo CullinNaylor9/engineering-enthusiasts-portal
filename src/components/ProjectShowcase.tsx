@@ -20,8 +20,8 @@ const projects: Project[] = [
     category: "Science"
   },
   {
-    title: "Mobile Weather Station",
-    description: "Create a digital weather station that collects, analyzes, and displays environmental data.",
+    title: "Plastic Molding Project",
+    description: "Create custom plastic parts using different molding techniques and learn about material properties.",
     imageSrc: "https://images.unsplash.com/photo-1567701193142-5a75211a2eda?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     difficulty: "Intermediate",
     category: "Technology"
