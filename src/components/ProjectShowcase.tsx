@@ -27,8 +27,8 @@ const projects: Project[] = [
     category: "Technology"
   },
   {
-    title: "Autonomous Robot",
-    description: "Build a robot that navigates its environment using sensors and programming logic.",
+    title: "Parts of a Flower",
+    description: "Explore the structure and function of flowers through detailed dissection and microscopic examination.",
     imageSrc: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     difficulty: "Advanced",
     category: "Engineering"
