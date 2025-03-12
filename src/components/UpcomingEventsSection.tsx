@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import { Calendar, Clock, MapPin, ExternalLink } from 'lucide-react';
 
@@ -38,7 +37,7 @@ const events: Event[] = [
     locationUrl: "https://maps.app.goo.gl/xsBjH7M3NZGLW8Fr9"
   },
   {
-    title: "Junior Engineers Open Day",
+    title: "Junior Engineers",
     date: "June 15, 2023",
     time: "1:00 PM - 5:00 PM",
     location: "Science Center, East Wing",
