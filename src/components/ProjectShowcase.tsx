@@ -1,3 +1,4 @@
+
 import { cn } from '@/lib/utils';
 import AnimatedImage from './AnimatedImage';
 import { ExternalLink, GraduationCap } from 'lucide-react';
@@ -19,7 +20,7 @@ const projects: Project[] = [
     category: "Technology"
   },
   {
-    title: "Plastic Molding Project",
+    title: "Parts of a Flower",
     description: "Create a flower by assembling different parts and learn about plant structures while exploring material properties.",
     imageSrc: "https://i.postimg.cc/FK15hDBb/buulluk.jpg",
     difficulty: "Intermediate",
