@@ -23,7 +23,7 @@ const projects: Project[] = [
     description: "Create a flower by assembling different parts and learn about plant structures while exploring material properties.",
     imageSrc: "https://i.postimg.cc/FK15hDBb/buulluk.jpg",
     difficulty: "Intermediate",
-    category: "Technology"
+    category: "Science"
   },
   {
     title: "Parts of a Flower",
