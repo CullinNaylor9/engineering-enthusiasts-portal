@@ -1,3 +1,4 @@
+
 import { cn } from '@/lib/utils';
 import { Calendar, Clock, MapPin, ExternalLink } from 'lucide-react';
 
@@ -38,7 +39,7 @@ const events: Event[] = [
   },
   {
     title: "Junior Engineers",
-    date: "June 15, 2023",
+    date: "To be confirmed",
     time: "1:00 PM - 5:00 PM",
     location: "Science Center, East Wing",
     description: "A free open day event where children and parents can explore our facilities, participate in mini-workshops, and learn about our programs.",
