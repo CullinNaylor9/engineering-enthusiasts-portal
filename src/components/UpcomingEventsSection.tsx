@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import { Calendar, Clock, MapPin, ExternalLink } from 'lucide-react';
 
@@ -36,16 +35,6 @@ const events: Event[] = [
     imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     registrationUrl: "https://inspire-course-bot.vercel.app/",
     locationUrl: "https://maps.app.goo.gl/xsBjH7M3NZGLW8Fr9"
-  },
-  {
-    title: "Junior Engineers",
-    date: "To be confirmed",
-    time: "1:00 PM - 5:00 PM",
-    location: "Science Center, East Wing",
-    description: "A free open day event where children and parents can explore our facilities, participate in mini-workshops, and learn about our programs.",
-    category: "open-day",
-    imageUrl: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    registrationUrl: "https://inspire-course-bot.vercel.app/"
   },
   {
     title: "Regional Robotics Competition",
