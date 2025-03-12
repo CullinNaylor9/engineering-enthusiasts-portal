@@ -36,16 +36,6 @@ const events: Event[] = [
     registrationUrl: "https://inspire-course-bot.vercel.app/",
     locationUrl: "https://maps.app.goo.gl/xsBjH7M3NZGLW8Fr9"
   },
-  {
-    title: "Regional Robotics Competition",
-    date: "August 5-6, 2023",
-    time: "8:00 AM - 6:00 PM",
-    location: "Convention Center",
-    description: "The annual robotics competition where teams from across the region compete in various challenges to showcase their engineering and programming skills.",
-    category: "competition",
-    imageUrl: "https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    registrationUrl: "https://inspire-course-bot.vercel.app/"
-  },
 ];
 
 const getCategoryStyles = (category: Event['category']) => {
