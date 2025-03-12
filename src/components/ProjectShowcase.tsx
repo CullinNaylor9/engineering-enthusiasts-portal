@@ -43,7 +43,7 @@ const projects: Project[] = [
   {
     title: "LEGO Mindstorms EV3",
     description: "Build programmable robots using LEGO Mindstorms EV3 and learn basic programming and robotics concepts.",
-    imageSrc: "https://images.unsplash.com/photo-1560324600-13d63b78c963?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    imageSrc: "https://i.postimg.cc/xT1wqPj8/IMG-1824.jpg",
     difficulty: "Beginner",
     category: "Technology"
   },
