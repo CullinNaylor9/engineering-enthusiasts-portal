@@ -37,7 +37,7 @@ const projects: Project[] = [
     title: "Orthographic Drawing",
     description: "Learn technical drawing techniques to represent three-dimensional objects in multiple two-dimensional views following engineering standards.",
     imageSrc: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    difficulty: "Advanced",
+    difficulty: "Intermediate",
     category: "Mathematics"
   },
   {
