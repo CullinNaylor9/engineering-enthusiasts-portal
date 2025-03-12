@@ -1,3 +1,4 @@
+
 import { cn } from '@/lib/utils';
 import { Calendar, Clock, MapPin, ExternalLink } from 'lucide-react';
 
@@ -7,7 +8,7 @@ interface Event {
   time: string;
   location: string;
   description: string;
-  category: 'workshop' | 'competition' | 'open-day' | 'camp';
+  category: 'workshop' | 'competition' | 'open-day' | 'camp' | 'extra-murals';
   imageUrl: string;
   registrationUrl: string;
   locationUrl?: string;
@@ -20,7 +21,7 @@ const events: Event[] = [
     time: "4:15pm to 5:15pm",
     location: "Main STEM Building",
     description: "An afternoon to do tech stuff and learn about coding and programming your own robots while learning fundamental engineering concepts.",
-    category: "camp",
+    category: "extra-murals",
     imageUrl: "https://i.postimg.cc/wMvwx05d/istockphoto-626589884-612x612.jpg",
     registrationUrl: "https://inspire-course-bot.vercel.app/",
     locationUrl: "https://maps.app.goo.gl/xsBjH7M3NZGLW8Fr9"
@@ -68,6 +69,8 @@ const getCategoryStyles = (category: Event['category']) => {
       return 'bg-green-100 text-green-800';
     case 'camp':
       return 'bg-amber-100 text-amber-800';
+    case 'extra-murals':
+      return 'bg-emerald-100 text-emerald-800';
     default:
       return 'bg-gray-100 text-gray-800';
   }
@@ -83,6 +86,8 @@ const getCategoryLabel = (category: Event['category']) => {
       return 'Open Day';
     case 'camp':
       return 'Camp';
+    case 'extra-murals':
+      return 'Extra Murals';
     default:
       return category;
   }
