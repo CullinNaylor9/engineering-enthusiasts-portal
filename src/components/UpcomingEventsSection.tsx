@@ -17,7 +17,7 @@ const events: Event[] = [
   {
     title: "Young Engineers",
     date: "Monday",
-    time: "9:00 AM - 3:00 PM",
+    time: "4:15 PM - 5:15 PM",
     location: "Main Campus, Building A",
     description: "A week-long immersive experience where students will design, build, and program their own robots while learning fundamental engineering concepts.",
     category: "camp",
