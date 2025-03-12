@@ -28,7 +28,7 @@ const events: Event[] = [
   },
   {
     title: "Coding Weekend Workshop",
-    date: "June 24-25, 2023",
+    date: "School Holidays",
     time: "10:00 AM - 4:00 PM",
     location: "Tech Hub, Downtown",
     description: "An intensive two-day coding workshop where participants will build their own web applications and games under the guidance of industry professionals.",
