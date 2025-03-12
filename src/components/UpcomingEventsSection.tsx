@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import { Calendar, Clock, MapPin, ExternalLink } from 'lucide-react';
 
@@ -29,7 +28,7 @@ const events: Event[] = [
   {
     title: "Coding Weekend Workshop",
     date: "School Holidays",
-    time: "10:00 AM - 4:00 PM",
+    time: "To be confirmed",
     location: "Tech Hub, Downtown",
     description: "An intensive two-day coding workshop where participants will build their own web applications and games under the guidance of industry professionals.",
     category: "workshop",
