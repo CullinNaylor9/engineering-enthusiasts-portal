@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import { Calendar, Clock, MapPin, ExternalLink } from 'lucide-react';
 
@@ -11,6 +10,7 @@ interface Event {
   category: 'workshop' | 'competition' | 'open-day' | 'camp';
   imageUrl: string;
   registrationUrl: string;
+  locationUrl?: string;
 }
 
 const events: Event[] = [
@@ -22,7 +22,8 @@ const events: Event[] = [
     description: "A week-long immersive experience where students will design, build, and program their own robots while learning fundamental engineering concepts.",
     category: "camp",
     imageUrl: "https://images.unsplash.com/photo-1579119886611-d3d7e0cbfbca?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    registrationUrl: "https://inspire-course-bot.vercel.app/"
+    registrationUrl: "https://inspire-course-bot.vercel.app/",
+    locationUrl: "https://maps.app.goo.gl/xsBjH7M3NZGLW8Fr9"
   },
   {
     title: "Coding Weekend Workshop",
@@ -139,7 +140,18 @@ const UpcomingEventsSection = () => {
                     </div>
                     <div className="flex items-center">
                       <MapPin className="h-4 w-4 mr-2 text-engineer-500" />
-                      <span>{event.location}</span>
+                      {event.locationUrl ? (
+                        <a 
+                          href={event.locationUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="hover:text-primary hover:underline"
+                        >
+                          {event.location}
+                        </a>
+                      ) : (
+                        <span>{event.location}</span>
+                      )}
                     </div>
                   </div>
                   <p className="text-engineer-700 text-sm mb-4 flex-grow">
