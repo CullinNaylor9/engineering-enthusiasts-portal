@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import { Calendar, Clock, MapPin, ExternalLink } from 'lucide-react';
 
@@ -22,7 +21,7 @@ const events: Event[] = [
     location: "Main STEM Building",
     description: "An afternoon to do tech stuff and learn about coding and programming your own robots while learning fundamental engineering concepts.",
     category: "camp",
-    imageUrl: "https://images.unsplash.com/photo-1579119886611-d3d7e0cbfbca?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://i.postimg.cc/wMvwx05d/istockphoto-626589884-612x612.jpg",
     registrationUrl: "https://inspire-course-bot.vercel.app/",
     locationUrl: "https://maps.app.goo.gl/xsBjH7M3NZGLW8Fr9"
   },
