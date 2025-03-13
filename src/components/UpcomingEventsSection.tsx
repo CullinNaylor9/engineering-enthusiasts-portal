@@ -19,7 +19,7 @@ const events: Event[] = [
     title: "Young Engineers",
     date: "Monday",
     time: "4:15pm to 5:15pm",
-    location: "Maths Room",
+    location: "STEM Room",
     description: "An afternoon to do tech stuff and learn about coding and programming your own robots while learning fundamental engineering concepts.",
     category: "extra-murals",
     imageUrl: "https://i.postimg.cc/wMvwx05d/istockphoto-626589884-612x612.jpg",
