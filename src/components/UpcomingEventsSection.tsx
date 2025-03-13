@@ -1,3 +1,4 @@
+
 import { cn } from '@/lib/utils';
 import { Calendar, Clock, MapPin, ExternalLink } from 'lucide-react';
 
@@ -18,7 +19,7 @@ const events: Event[] = [
     title: "Young Engineers",
     date: "Monday",
     time: "4:15pm to 5:15pm",
-    location: "Main STEM Building",
+    location: "STEM Building",
     description: "An afternoon to do tech stuff and learn about coding and programming your own robots while learning fundamental engineering concepts.",
     category: "extra-murals",
     imageUrl: "https://i.postimg.cc/wMvwx05d/istockphoto-626589884-612x612.jpg",
