@@ -1,3 +1,4 @@
+
 import { cn } from '@/lib/utils';
 import AnimatedImage from './AnimatedImage';
 import { ExternalLink, GraduationCap } from 'lucide-react';
@@ -47,7 +48,7 @@ const projects: Project[] = [
     category: "Technology"
   },
   {
-    title: "3D Geometric Modeling",
+    title: "3D Printer",
     description: "Apply mathematical principles to create and analyze 3D models of geometric structures.",
     imageSrc: "https://images.unsplash.com/photo-1545987796-200677ee1011?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     difficulty: "Intermediate",
