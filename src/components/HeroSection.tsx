@@ -1,7 +1,7 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { ArrowDown, Atom, Code, Microscope, Calculator } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +15,7 @@ const HeroSection = () => {
   }, []);
   
   const scrollToContent = () => {
-    const firstSection = document.getElementById('science');
+    const firstSection = document.getElementById('technology');
     if (firstSection) {
       window.scrollTo({
         top: firstSection.offsetTop - 100,
@@ -124,12 +124,13 @@ const HeroSection = () => {
             >
               Explore Courses
             </a>
-            <button 
+            <Button 
               onClick={scrollToContent}
-              className="button-secondary min-w-[180px]"
+              variant="secondary"
+              className="min-w-[180px]"
             >
               Learn More
-            </button>
+            </Button>
           </div>
         </div>
       </div>
