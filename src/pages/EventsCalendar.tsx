@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Calendar } from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
@@ -78,17 +77,6 @@ const events: Event[] = [
     imageUrl: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     registrationUrl: "https://inspire-course-bot.vercel.app/",
     exactDate: new Date(2023, 6, 25)
-  },
-  {
-    title: "Electronics Workshop",
-    date: "Tuesday",
-    time: "3:30pm to 5:00pm",
-    location: "Tech Lab",
-    description: "Learn the fundamentals of electronics by building simple circuits and understanding component functions.",
-    category: "workshop",
-    imageUrl: "https://images.unsplash.com/photo-1563770557718-f0bbeed38c38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    registrationUrl: "https://inspire-course-bot.vercel.app/",
-    exactDate: new Date(2023, 9, 5)
   }
 ];
 
@@ -131,7 +119,6 @@ const EventsCalendar = () => {
   const [filteredEvents, setFilteredEvents] = useState<Event[]>(events);
   const [activeCategory, setActiveCategory] = useState<Event['category'] | 'all'>('all');
   
-  // Filter events based on selected date and category
   const handleDateSelect = (selectedDate: Date | undefined) => {
     setDate(selectedDate);
     
@@ -151,7 +138,6 @@ const EventsCalendar = () => {
     }
   };
   
-  // Filter events based on category
   const filterEventsByCategory = (category: Event['category'] | 'all') => {
     setActiveCategory(category);
     
