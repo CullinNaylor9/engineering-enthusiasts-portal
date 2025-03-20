@@ -1,6 +1,6 @@
-
 import { cn } from '@/lib/utils';
 import { Calendar, Clock, MapPin, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface Event {
   title: string;
@@ -159,15 +159,13 @@ const UpcomingEventsSection = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <a 
-            href="https://inspire-course-bot.vercel.app/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <Link 
+            to="/events" 
             className="button-primary inline-flex items-center"
           >
             View All Events Calendar
             <ExternalLink className="ml-2 h-4 w-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
