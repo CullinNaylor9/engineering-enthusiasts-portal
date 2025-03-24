@@ -11,7 +11,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     quote: "The robotics program helped my daughter develop problem-solving skills and confidence. She now wants to be an engineer!",
-    author: "Maria Johnson",
+    author: "Bob Johnson",
     role: "Parent"
   },
   {
