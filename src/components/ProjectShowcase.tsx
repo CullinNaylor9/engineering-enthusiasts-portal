@@ -47,7 +47,8 @@ const projects: Project[] = [
     description: "Build programmable robots using LEGO Mindstorms EV3 and learn basic programming and robotics concepts.",
     imageSrc: "https://i.postimg.cc/xT1wqPj8/IMG-1824.jpg",
     difficulty: "Advanced",
-    category: "Technology"
+    category: "Technology",
+    learnMoreUrl: "https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-core-set/5003400/"
   },
   {
     title: "3D Printer",
