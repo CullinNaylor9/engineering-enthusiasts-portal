@@ -22,7 +22,7 @@ const events: Event[] = [
     location: "STEM Room",
     description: "An afternoon to do fun tech projects and learn about coding and programming your own robots while learning important engineering skills.",
     category: "extra-murals",
-    imageUrl: "https://i.postimg.cc/wMvwx05d/istockphoto-626589884-612x612.jpg",
+    imageUrl: "https://i.postimg.cc/4N4yTFvw/IMG-1884.jpg",
     registrationUrl: "https://inspire-course-bot.vercel.app/",
     locationUrl: "https://maps.app.goo.gl/xsBjH7M3NZGLW8Fr9"
   },
