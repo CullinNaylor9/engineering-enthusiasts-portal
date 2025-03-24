@@ -17,7 +17,7 @@ const testimonials: Testimonial[] = [
   {
     quote: "I've learned more about coding in two months here than I did in a year at school. The hands-on projects are amazing.",
     author: "David Chen",
-    role: "Student, Age 14"
+    role: "Student, Age 11"
   },
   {
     quote: "The instructors make complex concepts accessible and fun. My son looks forward to every class.",
