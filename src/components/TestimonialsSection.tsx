@@ -10,7 +10,7 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    quote: "The robotics program helped my daughter develop problem-solving skills and confidence. She now wants to be an engineer!",
+    quote: "Coding is so cool! I made a game where my character jumps over obstacles, and now I'm learning how to make robots move. I want to be an engineer when I grow up!",
     author: "Adam Farquharson",
     role: "Student, Age 11"
   },
