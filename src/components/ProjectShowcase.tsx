@@ -30,7 +30,7 @@ const projects: Project[] = [
   },
   {
     title: "Plastic Molding Project",
-    description: "Explore the structure and function of flowers through detailed dissection and microscopic examination.",
+    description: "Learn to mold plastic with a heat gun to create custom promotional products and develop basic advertising concepts for real-world applications.",
     imageSrc: "https://i.postimg.cc/cL98jGVQ/IMG-1881.jpg",
     difficulty: "Intermediate",
     category: "Engineering"
