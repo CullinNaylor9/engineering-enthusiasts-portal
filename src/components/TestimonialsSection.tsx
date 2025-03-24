@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import { Quote } from 'lucide-react';
 
@@ -12,7 +11,7 @@ const testimonials: Testimonial[] = [
   {
     quote: "The robotics program helped my daughter develop problem-solving skills and confidence. She now wants to be an engineer!",
     author: "Adam Farquharson",
-    role: "Student, Age 9"
+    role: "Student, Age 11"
   },
   {
     quote: "I've learned more about coding in two months here than I did in a year at school. The hands-on projects are amazing.",
