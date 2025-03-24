@@ -20,28 +20,32 @@ const projects: Project[] = [
     imageSrc: "https://m.media-amazon.com/images/I/618VhB2JqfL._AC_SL1500_.jpg",
     difficulty: "Beginner",
     category: "Technology",
-    learnMoreUrl: "https://education.lego.com/en-us/products/lego-education-wedo-2-0-core-set/45300/"
+    learnMoreUrl: "https://education.lego.com/en-us/products/lego-education-wedo-2-0-core-set/45300/",
+    linkText: "Where to buy this"
   },
   {
     title: "Parts of a Flower",
     description: "Create a flower by assembling different parts and learn about plant structures while exploring material properties.",
     imageSrc: "https://i.postimg.cc/FK15hDBb/buulluk.jpg",
     difficulty: "Beginner",
-    category: "Science"
+    category: "Science",
+    linkText: "Where to buy this"
   },
   {
     title: "Plastic Molding Project",
     description: "Learn to mold plastic with a heat gun to create custom promotional products and develop basic advertising concepts for real-world applications.",
     imageSrc: "https://i.postimg.cc/cL98jGVQ/IMG-1881.jpg",
     difficulty: "Intermediate",
-    category: "Engineering"
+    category: "Engineering",
+    linkText: "Where to buy this"
   },
   {
     title: "Orthographic Drawing",
     description: "Learn technical drawing techniques to represent three-dimensional objects in multiple two-dimensional views following engineering standards.",
     imageSrc: "https://i.postimg.cc/VLpBBH2K/de97830a0d3aae1c795668dba3c25da5.jpg",
     difficulty: "Intermediate",
-    category: "Mathematics"
+    category: "Mathematics",
+    linkText: "Where to buy this"
   },
   {
     title: "LEGO Mindstorms EV3",
@@ -57,7 +61,8 @@ const projects: Project[] = [
     description: "Apply mathematical principles to create and analyze 3D models of geometric structures.",
     imageSrc: "https://i.postimg.cc/130nnCSn/Creality-K1-C-AI-Camera-Hyperspeed-3-D-Printer.webp",
     difficulty: "Intermediate",
-    category: "Mathematics"
+    category: "Mathematics",
+    linkText: "Where to buy this"
   },
 ];
 
@@ -124,7 +129,7 @@ const ProjectShowcase = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80"
                 >
-                  {project.linkText || "Learn how to build this"}
+                  {project.linkText || "Where to buy this"}
                   <ExternalLink className="ml-1 h-4 w-4" />
                 </a>
               </div>
