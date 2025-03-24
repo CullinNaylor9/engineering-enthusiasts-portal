@@ -9,6 +9,7 @@ interface Project {
   imageSrc: string;
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced';
   category: 'Science' | 'Technology' | 'Engineering' | 'Mathematics';
+  learnMoreUrl?: string;
 }
 
 const projects: Project[] = [
@@ -17,7 +18,8 @@ const projects: Project[] = [
     description: "Learn about plant biology and sustainable agriculture by designing and building an efficient indoor growing system.",
     imageSrc: "https://m.media-amazon.com/images/I/618VhB2JqfL._AC_SL1500_.jpg",
     difficulty: "Beginner",
-    category: "Technology"
+    category: "Technology",
+    learnMoreUrl: "https://education.lego.com/en-us/products/lego-education-wedo-2-0-core-set/45300/"
   },
   {
     title: "Parts of a Flower",
@@ -114,7 +116,7 @@ const ProjectShowcase = () => {
                   {project.description}
                 </p>
                 <a 
-                  href="https://inspire-course-bot.vercel.app/" 
+                  href={project.learnMoreUrl || "https://inspire-course-bot.vercel.app/"} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80"
