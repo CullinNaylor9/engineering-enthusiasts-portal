@@ -12,7 +12,7 @@ const testimonials: Testimonial[] = [
   {
     quote: "The robotics program helped my daughter develop problem-solving skills and confidence. She now wants to be an engineer!",
     author: "Bob Johnson",
-    role: "Parent"
+    role: "Student, Age 9"
   },
   {
     quote: "I've learned more about coding in two months here than I did in a year at school. The hands-on projects are amazing.",
