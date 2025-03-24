@@ -10,6 +10,7 @@ interface Project {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced';
   category: 'Science' | 'Technology' | 'Engineering' | 'Mathematics';
   learnMoreUrl?: string;
+  linkText?: string;
 }
 
 const projects: Project[] = [
@@ -48,7 +49,8 @@ const projects: Project[] = [
     imageSrc: "https://i.postimg.cc/xT1wqPj8/IMG-1824.jpg",
     difficulty: "Advanced",
     category: "Technology",
-    learnMoreUrl: "https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-core-set/5003400/"
+    learnMoreUrl: "https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-core-set/5003400/",
+    linkText: "Where to buy this"
   },
   {
     title: "3D Printer",
@@ -122,7 +124,7 @@ const ProjectShowcase = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80"
                 >
-                  Learn how to build this
+                  {project.linkText || "Learn how to build this"}
                   <ExternalLink className="ml-1 h-4 w-4" />
                 </a>
               </div>
