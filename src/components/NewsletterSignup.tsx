@@ -49,7 +49,7 @@ const NewsletterSignup = () => {
           </h2>
           
           <p className="text-lg text-engineer-300 mb-8 max-w-xl mx-auto">
-            INFO ABOUT YOUNG ENGINEERS
+            Join our community of young innovators! Get exclusive access to STEM projects, early registration for workshops, and monthly challenges designed to spark creativity and build essential skills for the future.
           </p>
           
           {!isSubscribed ? (
