@@ -46,17 +46,6 @@ const events: Event[] = [
     exactDate: new Date(2023, 6, 15)
   },
   {
-    title: "Mathematics Olympiad",
-    date: "Wednesday",
-    time: "2:00pm to 4:00pm",
-    location: "Main Campus",
-    description: "A challenging competition testing mathematical problem-solving skills across various disciplines.",
-    category: "competition",
-    imageUrl: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    registrationUrl: "https://inspire-course-bot.vercel.app/",
-    exactDate: new Date(2023, 8, 20)
-  },
-  {
     title: "Summer STEM Camp",
     date: "Summer Break",
     time: "9:00am to 3:00pm daily",
