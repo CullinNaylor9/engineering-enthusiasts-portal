@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Mail, CheckCircle } from 'lucide-react';
@@ -48,7 +49,7 @@ const NewsletterSignup = () => {
           </h2>
           
           <p className="text-lg text-engineer-300 mb-8 max-w-xl mx-auto">
-            Join our newsletter for the latest workshops, tips, and student success stories
+            INFO ABOUT YOUNG ENGINEERS
           </p>
           
           {!isSubscribed ? (
@@ -95,4 +96,3 @@ const NewsletterSignup = () => {
 };
 
 export default NewsletterSignup;
-
