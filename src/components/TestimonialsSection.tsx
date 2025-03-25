@@ -21,7 +21,7 @@ const testimonials: Testimonial[] = [
   },
   {
     quote: "The instructors make complex concepts accessible and fun. My son looks forward to every class.",
-    author: "Elizabeth Chunanu",
+    author: "Rene Naylor",
     role: "Parent"
   },
 ];
