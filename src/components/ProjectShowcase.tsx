@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import AnimatedImage from './AnimatedImage';
 import { ExternalLink, GraduationCap } from 'lucide-react';
@@ -38,6 +37,7 @@ const projects: Project[] = [
     imageSrc: "https://i.postimg.cc/cL98jGVQ/IMG-1881.jpg",
     difficulty: "Intermediate",
     category: "Engineering",
+    learnMoreUrl: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTEYRjsUO5GMtPKhW-sUcDONuVnl7FgPmMIB7AUBmcqXhj8aPb4Kp2r0IQD5Cqo2ipaa0siIhmtx_rQpiqxe_wfeWKKiOqY0BharYBpeI7wdIfP-N1KTMo&usqp=CAE",
     linkText: "Where to buy this"
   },
   {
