@@ -28,7 +28,7 @@ const projects: Project[] = [
     imageSrc: "https://i.postimg.cc/FK15hDBb/buulluk.jpg",
     difficulty: "Beginner",
     category: "Science",
-    learnMoreUrl: "https://inspire-course-bot.vercel.app/",
+    learnMoreUrl: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSRl0H0FBhOfILTZ9Ops5uzyFbDF2CKSQ6U-pEo0opXyaIWOFlZlnQevgPyDQQcN2i3vmFcOMKbWd9_bNpYO7J_4Y-aNCEdq3nDb5_uaxomBXljcKexjnZPhA&usqp=CAE",
     linkText: "Where to buy this"
   },
   {
