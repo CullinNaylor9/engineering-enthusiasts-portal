@@ -1,16 +1,4 @@
-
-export interface Event {
-  title: string;
-  date: string;
-  time: string;
-  location: string;
-  description: string;
-  category: 'workshop' | 'competition' | 'open-day' | 'camp' | 'extra-murals';
-  imageUrl: string;
-  registrationUrl: string;
-  locationUrl?: string;
-  exactDate?: Date;
-}
+import { Event } from './EventTypes';
 
 export const events: Event[] = [
   {
@@ -20,7 +8,7 @@ export const events: Event[] = [
     location: "STEM Room",
     description: "An afternoon to do fun tech projects and learn about coding and programming your own robots while learning important engineering skills.",
     category: "extra-murals",
-    imageUrl: "https://i.postimg.cc/4N4yTFvw/IMG-1884.jpg",
+    imageUrl: "https://i.postimg.cc/65Qcqjkh/IMG-1913.jpg", // Updated image URL
     registrationUrl: "https://inspire-course-bot.vercel.app/",
     locationUrl: "https://maps.app.goo.gl/xsBjH7M3NZGLW8Fr9",
     exactDate: new Date(2023, 5, 5)
