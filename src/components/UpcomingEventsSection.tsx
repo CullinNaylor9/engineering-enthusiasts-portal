@@ -1,77 +1,9 @@
+
 import { cn } from '@/lib/utils';
 import { Calendar, Clock, MapPin, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
-interface Event {
-  title: string;
-  date: string;
-  time: string;
-  location: string;
-  description: string;
-  category: 'workshop' | 'competition' | 'open-day' | 'camp' | 'extra-murals';
-  imageUrl: string;
-  registrationUrl: string;
-  locationUrl?: string;
-}
-
-const events: Event[] = [
-  {
-    title: "Young Engineers",
-    date: "Monday",
-    time: "4:15pm to 5:15pm",
-    location: "STEM Room",
-    description: "An afternoon to do fun tech projects and learn about coding and programming your own robots while learning important engineering skills.",
-    category: "extra-murals",
-    imageUrl: "https://i.postimg.cc/4N4yTFvw/IMG-1884.jpg",
-    registrationUrl: "https://inspire-course-bot.vercel.app/",
-    locationUrl: "https://maps.app.goo.gl/xsBjH7M3NZGLW8Fr9"
-  },
-  {
-    title: "Coding Weekend Workshop",
-    date: "School Holidays",
-    time: "To be confirmed",
-    location: "Maths Room",
-    description: "An intensive two-day coding workshop where participants will build their own web applications and games under the guidance of industry professionals.",
-    category: "workshop",
-    imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    registrationUrl: "https://inspire-course-bot.vercel.app/",
-    locationUrl: "https://maps.app.goo.gl/xsBjH7M3NZGLW8Fr9"
-  },
-];
-
-const getCategoryStyles = (category: Event['category']) => {
-  switch (category) {
-    case 'workshop':
-      return 'bg-blue-100 text-blue-800';
-    case 'competition':
-      return 'bg-purple-100 text-purple-800';
-    case 'open-day':
-      return 'bg-green-100 text-green-800';
-    case 'camp':
-      return 'bg-amber-100 text-amber-800';
-    case 'extra-murals':
-      return 'bg-emerald-100 text-emerald-800';
-    default:
-      return 'bg-gray-100 text-gray-800';
-  }
-};
-
-const getCategoryLabel = (category: Event['category']) => {
-  switch (category) {
-    case 'workshop':
-      return 'Workshop';
-    case 'competition':
-      return 'Competition';
-    case 'open-day':
-      return 'Open Day';
-    case 'camp':
-      return 'Camp';
-    case 'extra-murals':
-      return 'Extra Murals';
-    default:
-      return category;
-  }
-};
+import { events } from '@/types/EventTypes';
+import { getCategoryLabel, getCategoryStyles } from '@/utils/categoryUtils';
 
 const UpcomingEventsSection = () => {
   return (
