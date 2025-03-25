@@ -16,7 +16,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: "We Do 2.0",
-    description: "Learn about plant biology and sustainable agriculture by designing and building an efficient indoor growing system.",
+    description: "Build interactive LEGO models and learn coding fundamentals by programming robots that move, react, and solve problems.",
     imageSrc: "https://m.media-amazon.com/images/I/618VhB2JqfL._AC_SL1500_.jpg",
     difficulty: "Beginner",
     category: "Technology",
