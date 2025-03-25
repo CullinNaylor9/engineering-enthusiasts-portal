@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import AnimatedImage from './AnimatedImage';
 import { ExternalLink, GraduationCap } from 'lucide-react';
@@ -29,6 +28,7 @@ const projects: Project[] = [
     imageSrc: "https://i.postimg.cc/FK15hDBb/buulluk.jpg",
     difficulty: "Beginner",
     category: "Science",
+    learnMoreUrl: "https://inspire-course-bot.vercel.app/",
     linkText: "Where to buy this"
   },
   {
