@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Calendar } from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
@@ -45,17 +44,6 @@ const events: Event[] = [
     registrationUrl: "https://inspire-course-bot.vercel.app/",
     locationUrl: "https://maps.app.goo.gl/xsBjH7M3NZGLW8Fr9",
     exactDate: new Date(2023, 6, 15)
-  },
-  {
-    title: "Robotics Showcase",
-    date: "Friday",
-    time: "3:00pm to 5:30pm",
-    location: "School Hall",
-    description: "Students demonstrate their robotic creations in an interactive showcase highlighting innovation and problem-solving skills.",
-    category: "competition",
-    imageUrl: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    registrationUrl: "https://inspire-course-bot.vercel.app/",
-    exactDate: new Date(2023, 7, 10)
   },
   {
     title: "Mathematics Olympiad",
