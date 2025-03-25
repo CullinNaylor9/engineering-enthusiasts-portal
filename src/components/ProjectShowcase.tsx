@@ -1,3 +1,4 @@
+
 import { cn } from '@/lib/utils';
 import AnimatedImage from './AnimatedImage';
 import { ExternalLink, GraduationCap } from 'lucide-react';
@@ -45,8 +46,7 @@ const projects: Project[] = [
     description: "Learn technical drawing techniques to represent three-dimensional objects in multiple two-dimensional views following engineering standards.",
     imageSrc: "https://i.postimg.cc/VLpBBH2K/de97830a0d3aae1c795668dba3c25da5.jpg",
     difficulty: "Intermediate",
-    category: "Mathematics",
-    linkText: "Where to buy this"
+    category: "Mathematics"
   },
   {
     title: "LEGO Mindstorms EV3",
