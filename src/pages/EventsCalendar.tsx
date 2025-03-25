@@ -45,17 +45,6 @@ const events: Event[] = [
     locationUrl: "https://maps.app.goo.gl/xsBjH7M3NZGLW8Fr9",
     exactDate: new Date(2023, 6, 15)
   },
-  {
-    title: "Summer STEM Camp",
-    date: "Summer Break",
-    time: "9:00am to 3:00pm daily",
-    location: "School Campus",
-    description: "A week-long immersive experience exploring various STEM fields through hands-on projects and expert guidance.",
-    category: "camp",
-    imageUrl: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    registrationUrl: "https://inspire-course-bot.vercel.app/",
-    exactDate: new Date(2023, 6, 25)
-  }
 ];
 
 const getCategoryStyles = (category: Event['category']) => {
