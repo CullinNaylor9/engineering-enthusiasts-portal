@@ -63,7 +63,7 @@ const projects: Project[] = [
     imageSrc: "https://i.postimg.cc/130nnCSn/Creality-K1-C-AI-Camera-Hyperspeed-3-D-Printer.webp",
     difficulty: "Intermediate",
     category: "Mathematics",
-    learnMoreUrl: "https://inspire-course-bot.vercel.app/",
+    learnMoreUrl: "https://3dstore.co.za/product/creality-k1-se-3d-printer/?utm_source=Google%20Shopping&utm_campaign=3D%20Feed&utm_medium=cpc&utm_term=3022&utm_source=Google+Ads&utm_id=3DStore+PMAX+ENGLISH&gad_source=1",
     linkText: "Where to buy this"
   },
 ];
