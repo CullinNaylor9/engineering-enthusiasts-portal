@@ -153,7 +153,7 @@ const curriculumModules: Module[] = [
     duration: "8 weeks",
     level: "Beginner",
     category: "Technology",
-    imageUrl: "https://images.unsplash.com/photo-1478827536114-da961b7f86d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://i.postimg.cc/ZnxQmWyK/electronics-LARGE-1024x700.jpg",
     topics: [
       "Circuit theory",
       "Electronic components",
