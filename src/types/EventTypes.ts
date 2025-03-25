@@ -1,4 +1,16 @@
-import { Event } from './EventTypes';
+
+export interface Event {
+  title: string;
+  date: string;
+  time: string;
+  location: string;
+  description: string;
+  category: 'workshop' | 'competition' | 'open-day' | 'camp' | 'extra-murals';
+  imageUrl: string;
+  registrationUrl: string;
+  locationUrl?: string;
+  exactDate?: Date;
+}
 
 export const events: Event[] = [
   {
