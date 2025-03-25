@@ -26,7 +26,7 @@ export const events: Event[] = [
     exactDate: new Date(2023, 5, 5)
   },
   {
-    title: "Coding Weekend Workshop",
+    title: "Inspire Africa",
     date: "School Holidays",
     time: "To be confirmed",
     location: "Maths Room",
