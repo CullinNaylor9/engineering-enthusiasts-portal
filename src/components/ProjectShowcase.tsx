@@ -1,3 +1,4 @@
+
 import { cn } from '@/lib/utils';
 import AnimatedImage from './AnimatedImage';
 import { ExternalLink, GraduationCap } from 'lucide-react';
@@ -62,6 +63,7 @@ const projects: Project[] = [
     imageSrc: "https://i.postimg.cc/130nnCSn/Creality-K1-C-AI-Camera-Hyperspeed-3-D-Printer.webp",
     difficulty: "Intermediate",
     category: "Mathematics",
+    learnMoreUrl: "https://inspire-course-bot.vercel.app/",
     linkText: "Where to buy this"
   },
 ];
