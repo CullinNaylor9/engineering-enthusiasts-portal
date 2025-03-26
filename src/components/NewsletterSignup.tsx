@@ -71,7 +71,7 @@ const NewsletterSignup = () => {
                     isSubmitting && "opacity-70 cursor-not-allowed"
                   )}
                 >
-                  {isSubmitting ? "Subscribing..." : (email ? "Join" : "Subscribe")}
+                  {isSubmitting ? "Subscribing..." : "Join"}
                 </button>
               </div>
               <p className="mt-3 text-sm text-engineer-400">
