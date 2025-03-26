@@ -1,3 +1,4 @@
+
 import { cn } from '@/lib/utils';
 import AnimatedImage from './AnimatedImage';
 import { ExternalLink, GraduationCap } from 'lucide-react';
@@ -38,6 +39,7 @@ const projects: Project[] = [
     difficulty: "Intermediate",
     category: "Engineering",
     learnMoreUrl: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTEYRjsUO5GMtPKhW-sUcDONuVnl7FgPmMIB7AUBmcqXhj8aPb4Kp2r0IQD5Cqo2ipaa0siIhmtx_rQpiqxe_wfeWKKiOqY0BharYBpeI7wdIfP-N1KTMo&usqp=CAE"
+    // Removed linkText property for Plastic Molding Project
   },
   {
     title: "Orthographic Drawing",
@@ -123,15 +125,18 @@ const ProjectShowcase = () => {
                 <p className="text-engineer-700 mb-4">
                   {project.description}
                 </p>
-                <a 
-                  href={project.learnMoreUrl || "https://inspire-course-bot.vercel.app/"} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80"
-                >
-                  {project.linkText || "Where to buy this"}
-                  <ExternalLink className="ml-1 h-4 w-4" />
-                </a>
+                {project.learnMoreUrl && (
+                  <a 
+                    href={project.learnMoreUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80"
+                  >
+                    {/* Only show linkText if it exists, otherwise show nothing for Plastic Molding Project */}
+                    {project.title === "Plastic Molding Project" ? "" : (project.linkText || "Where to buy this")}
+                    <ExternalLink className="ml-1 h-4 w-4" />
+                  </a>
+                )}
               </div>
             </div>
           ))}
