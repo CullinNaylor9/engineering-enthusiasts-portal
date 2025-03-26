@@ -65,16 +65,16 @@ const EventsCalendar = () => {
             <div className="md:col-span-4 lg:col-span-3">
               <div className="bg-white rounded-xl shadow-subtle p-4 overflow-hidden">
                 <h2 className="font-semibold text-lg mb-4">Date</h2>
-                <div className="w-full">
+                <div className="w-full flex justify-center">
                   <Calendar
                     mode="single"
                     selected={date}
                     onSelect={handleDateSelect}
-                    className="rounded-md border w-full"
+                    className="rounded-md border"
                   />
                 </div>
                 
-                <div className="mt-8">
+                <div className="mt-6">
                   <CategoryFilters 
                     activeCategory={activeCategory} 
                     onCategoryChange={filterEventsByCategory} 
@@ -96,3 +96,4 @@ const EventsCalendar = () => {
 };
 
 export default EventsCalendar;
+
