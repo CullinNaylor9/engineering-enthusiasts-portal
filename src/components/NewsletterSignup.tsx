@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Mail, CheckCircle } from 'lucide-react';
@@ -83,7 +82,7 @@ const NewsletterSignup = () => {
               <div className="bg-green-500/10 p-4 rounded-full mb-4">
                 <CheckCircle className="h-10 w-10 text-green-500" />
               </div>
-              <h3 className="text-xl font-medium mb-2">Thank You for Subscribing!</h3>
+              <h3 className="text-xl font-medium mb-2">Thank You for Joining!</h3>
               <p className="text-engineer-300">
                 You're now on the list to receive updates from YoungEngineers.
               </p>
