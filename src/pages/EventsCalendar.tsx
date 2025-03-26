@@ -63,14 +63,16 @@ const EventsCalendar = () => {
           
           <div className="grid md:grid-cols-12 gap-8">
             <div className="md:col-span-4 lg:col-span-3">
-              <div className="bg-white rounded-xl shadow-subtle p-6">
+              <div className="bg-white rounded-xl shadow-subtle p-4 overflow-hidden">
                 <h2 className="font-semibold text-lg mb-4">Date</h2>
-                <Calendar
-                  mode="single"
-                  selected={date}
-                  onSelect={handleDateSelect}
-                  className="rounded-md border"
-                />
+                <div className="w-full">
+                  <Calendar
+                    mode="single"
+                    selected={date}
+                    onSelect={handleDateSelect}
+                    className="rounded-md border w-full"
+                  />
+                </div>
                 
                 <div className="mt-8">
                   <CategoryFilters 
