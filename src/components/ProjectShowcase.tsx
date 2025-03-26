@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import AnimatedImage from './AnimatedImage';
 import { ExternalLink, GraduationCap } from 'lucide-react';
@@ -28,9 +27,7 @@ const projects: Project[] = [
     description: "Create a flower by assembling different parts and learn about plant structures while exploring material properties.",
     imageSrc: "https://i.postimg.cc/FK15hDBb/buulluk.jpg",
     difficulty: "Beginner",
-    category: "Science",
-    learnMoreUrl: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSRl0H0FBhOfILTZ9Ops5uzyFbDF2CKSQ6U-pEo0opXyaIWOFlZlnQevgPyDQQcN2i3vmFcOMKbWd9_bNpYO7J_4Y-aNCEdq3nDb5_uaxomBXljcKexjnZPhA&usqp=CAE",
-    linkText: "Where to buy this"
+    category: "Science"
   },
   {
     title: "Plastic Molding Project",
@@ -38,7 +35,6 @@ const projects: Project[] = [
     imageSrc: "https://i.postimg.cc/cL98jGVQ/IMG-1881.jpg",
     difficulty: "Intermediate",
     category: "Engineering"
-    // Removed learnMoreUrl and linkText properties for Plastic Molding Project
   },
   {
     title: "Orthographic Drawing",
