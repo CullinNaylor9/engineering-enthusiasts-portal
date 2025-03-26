@@ -230,16 +230,13 @@ const FullCurriculum = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredModules, setFilteredModules] = useState<Module[]>(curriculumModules);
   
-  // Filter modules based on category and search query
   useEffect(() => {
     let filtered = curriculumModules;
     
-    // Filter by category
     if (activeCategory !== 'all') {
       filtered = filtered.filter(module => module.category === activeCategory);
     }
     
-    // Filter by search query
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
       filtered = filtered.filter(module => 
@@ -258,7 +255,6 @@ const FullCurriculum = () => {
       
       <main className="flex-grow">
         <div className="container mx-auto px-4 py-16 md:py-24">
-          {/* Header */}
           <div className="flex flex-col md:flex-row md:items-center justify-between mb-10">
             <div className="mb-6 md:mb-0">
               <Link to="/" className="inline-flex items-center text-engineer-600 hover:text-engineer-800 mb-4">
@@ -285,7 +281,6 @@ const FullCurriculum = () => {
             </a>
           </div>
           
-          {/* Filters */}
           <div className="mb-8">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
               <Tabs defaultValue="all" className="w-full md:w-auto" onValueChange={(value) => setActiveCategory(value as 'all' | Module['category'])}>
@@ -310,7 +305,6 @@ const FullCurriculum = () => {
             </div>
           </div>
           
-          {/* Modules Grid */}
           {filteredModules.length > 0 ? (
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {filteredModules.map((module) => (
@@ -391,7 +385,6 @@ const FullCurriculum = () => {
             </div>
           )}
           
-          {/* Call to action section */}
           <div className="mt-20 p-8 bg-engineer-50 rounded-2xl">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
               <div className="max-w-2xl">
