@@ -37,9 +37,8 @@ const projects: Project[] = [
     description: "Learn to mold plastic with a heat gun to create custom promotional products and develop basic advertising concepts for real-world applications.",
     imageSrc: "https://i.postimg.cc/cL98jGVQ/IMG-1881.jpg",
     difficulty: "Intermediate",
-    category: "Engineering",
-    learnMoreUrl: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTEYRjsUO5GMtPKhW-sUcDONuVnl7FgPmMIB7AUBmcqXhj8aPb4Kp2r0IQD5Cqo2ipaa0siIhmtx_rQpiqxe_wfeWKKiOqY0BharYBpeI7wdIfP-N1KTMo&usqp=CAE"
-    // Removed linkText property for Plastic Molding Project
+    category: "Engineering"
+    // Removed learnMoreUrl and linkText properties for Plastic Molding Project
   },
   {
     title: "Orthographic Drawing",
@@ -132,8 +131,7 @@ const ProjectShowcase = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80"
                   >
-                    {/* Only show linkText if it exists, otherwise show nothing for Plastic Molding Project */}
-                    {project.title === "Plastic Molding Project" ? "" : (project.linkText || "Where to buy this")}
+                    {project.linkText || "Where to buy this"}
                     <ExternalLink className="ml-1 h-4 w-4" />
                   </a>
                 )}
