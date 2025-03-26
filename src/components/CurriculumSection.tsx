@@ -1,4 +1,3 @@
-
 import { cn } from '@/lib/utils';
 import { BookOpen, CheckCircle, Star, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -56,6 +55,21 @@ const modules: CourseModule[] = [
       "AI and machine learning basics",
       "Mechanical design principles",
       "Competition strategies"
+    ]
+  },
+  {
+    title: "Go Karting",
+    description: "A fun time to make a go kart and race it against different people.",
+    duration: "8 weeks",
+    level: "Intermediate",
+    category: "Engineering",
+    topics: [
+      "Mechanical engineering basics",
+      "Vehicle dynamics",
+      "Engine fundamentals",
+      "Safety systems",
+      "Race strategy",
+      "Team collaboration"
     ]
   },
 ];

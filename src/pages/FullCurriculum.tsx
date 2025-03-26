@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -94,6 +93,31 @@ const curriculumModules: Module[] = [
       "Apply basic machine learning algorithms to robotics challenges",
       "Design efficient mechanical systems for specific robotics tasks",
       "Develop effective strategies for robotics competitions"
+    ]
+  },
+  {
+    id: "go-karting",
+    title: "Go Karting",
+    description: "A fun time to make a go kart and race it against different people.",
+    duration: "8 weeks",
+    level: "Intermediate",
+    category: "Engineering",
+    imageUrl: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    topics: [
+      "Mechanical engineering basics",
+      "Vehicle dynamics",
+      "Engine fundamentals",
+      "Safety systems",
+      "Race strategy",
+      "Team collaboration"
+    ],
+    learningOutcomes: [
+      "Design and build a functional go-kart",
+      "Apply principles of mechanics and physics to vehicle design",
+      "Implement safety features and protocols",
+      "Optimize vehicle performance through testing and modification",
+      "Develop racing strategies and techniques",
+      "Work effectively in a team environment"
     ]
   },
   {
