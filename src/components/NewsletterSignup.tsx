@@ -45,7 +45,7 @@ const NewsletterSignup = () => {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            Sign Up Now to YoungEngineers
+            Sign Up Now to Young Engineers
           </h2>
           
           <p className="text-lg text-engineer-300 mb-8 max-w-xl mx-auto">
