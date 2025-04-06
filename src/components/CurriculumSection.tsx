@@ -1,3 +1,4 @@
+
 import { cn } from '@/lib/utils';
 import { BookOpen, CheckCircle, Star, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -40,21 +41,6 @@ const modules: CourseModule[] = [
       "Spatial reasoning and geometry",
       "Patterns and algebra",
       "Applied mathematics"
-    ]
-  },
-  {
-    title: "Advanced Robotics",
-    description: "Design and program sophisticated robots for complex tasks and competitions.",
-    duration: "14 weeks",
-    level: "Advanced",
-    category: "Engineering",
-    topics: [
-      "Autonomous navigation",
-      "Sensor integration",
-      "Control systems",
-      "AI and machine learning basics",
-      "Mechanical design principles",
-      "Competition strategies"
     ]
   },
   {

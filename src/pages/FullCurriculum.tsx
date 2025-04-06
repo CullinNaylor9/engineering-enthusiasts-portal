@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -71,31 +72,6 @@ const curriculumModules: Module[] = [
     ]
   },
   {
-    id: "advanced-robotics",
-    title: "Advanced Robotics",
-    description: "Design and program sophisticated robots for complex tasks and competitions.",
-    duration: "14 weeks",
-    level: "Advanced",
-    category: "Engineering",
-    imageUrl: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    topics: [
-      "Autonomous navigation",
-      "Sensor integration",
-      "Control systems",
-      "AI and machine learning basics",
-      "Mechanical design principles",
-      "Competition strategies"
-    ],
-    learningOutcomes: [
-      "Design robots capable of autonomous navigation",
-      "Integrate and calibrate multiple sensors for environmental perception",
-      "Implement control systems for precise robot movement",
-      "Apply basic machine learning algorithms to robotics challenges",
-      "Design efficient mechanical systems for specific robotics tasks",
-      "Develop effective strategies for robotics competitions"
-    ]
-  },
-  {
     id: "go-karting",
     title: "Go Karting",
     description: "A fun time to make a go kart and race it against different people.",
@@ -118,56 +94,6 @@ const curriculumModules: Module[] = [
       "Optimize vehicle performance through testing and modification",
       "Develop racing strategies and techniques",
       "Work effectively in a team environment"
-    ]
-  },
-  {
-    id: "programming-fundamentals",
-    title: "Programming Fundamentals",
-    description: "Learn the basics of programming with Python, focusing on problem-solving and algorithmic thinking.",
-    duration: "8 weeks",
-    level: "Beginner",
-    category: "Technology",
-    imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    topics: [
-      "Variables and data types",
-      "Control structures",
-      "Functions and modules",
-      "Data structures",
-      "File I/O",
-      "Introduction to object-oriented programming"
-    ],
-    learningOutcomes: [
-      "Write basic Python programs to solve problems",
-      "Implement control structures for program flow",
-      "Create and use functions to modularize code",
-      "Work with lists, dictionaries, and other data structures",
-      "Read from and write to files programmatically",
-      "Apply basic object-oriented programming concepts"
-    ]
-  },
-  {
-    id: "science-experiments",
-    title: "Scientific Investigation",
-    description: "Design and conduct experiments using the scientific method to explore natural phenomena.",
-    duration: "10 weeks",
-    level: "Beginner",
-    category: "Science",
-    imageUrl: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    topics: [
-      "Scientific method",
-      "Experimental design",
-      "Data collection techniques",
-      "Statistical analysis",
-      "Laboratory safety",
-      "Research reporting"
-    ],
-    learningOutcomes: [
-      "Design controlled experiments to test hypotheses",
-      "Collect and record accurate experimental data",
-      "Apply appropriate statistical methods to analyze results",
-      "Draw evidence-based conclusions from experimental data",
-      "Present research findings effectively using scientific conventions",
-      "Practice safe laboratory procedures"
     ]
   },
   {
