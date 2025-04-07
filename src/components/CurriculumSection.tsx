@@ -44,6 +44,21 @@ const modules: CourseModule[] = [
     ]
   },
   {
+    title: "Digital Technology",
+    description: "Explore the fundamentals of computer technology and digital systems.",
+    duration: "10 weeks",
+    level: "Beginner",
+    category: "Technology",
+    topics: [
+      "Computer hardware basics",
+      "Operating systems",
+      "Networks and internet",
+      "Cybersecurity fundamentals",
+      "Digital literacy",
+      "Emerging technologies"
+    ]
+  },
+  {
     title: "Go Karting",
     description: "A fun time to make a go kart and race it against different people.",
     duration: "8 weeks",
